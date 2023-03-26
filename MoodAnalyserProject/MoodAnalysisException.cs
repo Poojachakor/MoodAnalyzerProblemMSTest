@@ -11,7 +11,9 @@ namespace MoodAnalyserProject
         public enum ExceptionType
         {
             NULL_MESSAGE,
-            EMPTY_MESSAGE
+            EMPTY_MESSAGE,
+            NO_SUCH_CLASS,
+            NO_SUCH_METHOD
         }
         public readonly ExceptionType type;
         public MoodAnalysisException(ExceptionType type, string message) : base(message)
@@ -20,4 +22,6 @@ namespace MoodAnalyserProject
         }
     }
 }
+
+
 
